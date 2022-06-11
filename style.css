@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+main{
+    width: 100%;
+    position: absolute;
+    margin-left: calc(50% - 250px);
+    margin-top: 50px;
+}
+.converterDados{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;
+    height: 100px;
+    background-color: #ecf0f1;
+}
+
+.modalAlerta{
+    display: none;
+    color: white;
+    margin-bottom: 30px;
+    width: 500px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.modalAlerta #textoModalAlerta{
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+.converterDados form{
+    width: 80%;
+    text-align: center;
+}
+
+.converterDados button{
+    width: 80%;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+}
+
+#editorDeTexto{
+    width: 500px;
+    border: solid 2px gray;
+}
+.editorDeTextoHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ecf0f1;
+    padding: 10px;
+}
+.editorDeTextoHeader .btn{
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    
+}
+.editorDeTextoHeader .btn:hover{
+    border: solid 1px gray;
+    cursor: pointer;
+}
+#editorDeTextoBody{
+    min-height: 200px;
+    outline: none;
+    padding: 20px;
+    word-wrap: break-word;
+}
